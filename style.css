@@ -1,3 +1,29 @@
-#San Francisco State University {
-    
+*{
+    margin: 0;
+    height: 100%;
+}
+body{
+    width:100%;
+    background-color: black;
+
+}
+.img-container{
+    background-image: url(https://www.stripes.com/polopoly_fs/1.492066.1507750271!/image/image.jpg_gen/derivatives/landscape_900/image.jpg);
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.inner-container{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    color: green;
+    height:auto;
+    margin-top: 215px;
+}
+h1{
+    font-size: 9em;
+    font-family: 'Black Ops One', cursive;
 }
