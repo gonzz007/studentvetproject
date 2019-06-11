@@ -11,11 +11,27 @@ body {
     text-align: center;
 }
 #social {
+    color: white;
     text-align: right;
-}   
+}  
+#contact {
+    text-align: center;
+} 
+#form{
+    text-align: center;
+}
+#submit {
+    text-align: center;
+}
+#comments {
+    text-align: center;
+    width:40em;
+    
+}
+
 
 @media only screen and (max-width: 600px) {
     #header {
         font-size: 2em;
-    }
- 
+    } 
+}

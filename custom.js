@@ -6,3 +6,4 @@ document.addEventListener('DOMContentLoaded', () => {
         $(this).addClass('active');
     });
 })
+
