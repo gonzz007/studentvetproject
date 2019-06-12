@@ -31,29 +31,23 @@
  </div>
 <div id="search" class= "ui container center">
   <h2>Discover colleges that fit you.</h2>
-  <h3>Search for Colleges</h3>
-  <div class="ui category search">
-    <div class="ui icon input">
-      <input class="prompt" type="text" placeholder="Name or Location">
-      <i class="search icon"></i>
-    </div>
-    <div class="results"></div>
-  </div>
-</div><br><br>
+  <h3>Search for Colleges</h3><br>
+  <input type="search" id="search" placeholder="Name or Location" />
+  <input type="button" id="showcollege" value="Search" onclick="collegelist()"/><br><br><br>
+  
 
- <div id="test" class="ui container">
+ <div id="cards" class="ui container">
   <div class="ui cards">
     <div class="card">
       <div class="content">
-        <img class="right floated mini ui image" src="/images/avatar/large/elliot.jpg">
         <div class="header">
-          Elliot Fu
+          Name of College
         </div>
-        <div class="meta">
-          Friends of Veronika
+        <div class="location">
+          Location of College
         </div>
-        <div class="description">
-          Elliot requested permission to view your contact details
+        <div class="collegewebsite">
+          College website
         </div>
       </div>
  </div>
