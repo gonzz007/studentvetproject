@@ -1,17 +1,19 @@
 
-// document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
 
-//     $('.ui .item').on('click', function () {
-//         $('.ui .item').removeClass('active');
-//         $(this).addClass('active');
-//     });
-// })
+    $('.ui .item').on('click', function () {
+        $('.ui .item').removeClass('active');
+        $(this).addClass('active');
+    });
+})
 window.onload = function() {
     var school = document.querySelector('#schoolName')
 let form=document.querySelector("#uni")
 let name = document.querySelector('#nameCollege')
 let collegeLocation= document.querySelector('#collegeLocation')
 let collegeurl = document.querySelector('#collegewebsite')
+let collegeState = document.querySelector('#collegeState')
+let pricecal= document.querySelector('#pricecalculator')
 let val
 let schoolInfo
 form.addEventListener("submit", function (event){ 
@@ -29,7 +31,11 @@ form.addEventListener("submit", function (event){
         
         name.innerHTML = schoolInfo.name
         collegeLocation.innerHTML=schoolInfo.city
+        collegeState.innerHTML=schoolInfo.state
         collegeurl.innerHTML=schoolInfo.school_url
+        pricecal.innerHTML=schoolInfo.price_calculator_url
+        
+
         
     .catch(function() {
     }) ;
