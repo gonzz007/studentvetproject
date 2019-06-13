@@ -29,28 +29,32 @@
         alt="" class="ui small fluid image centered">
          <h1 class="ui large header center aligned" style="color: aliceblue; font-family: Black Ops One, cursive;">G.I. STUDENT</h1><br><br><br>
  </div>
+ 
 <div id="search" class= "ui container center">
   <h2>Discover colleges that fit you.</h2>
   <h3>Search for Colleges</h3><br>
-  <input type="search" id="search" placeholder="Name or Location" />
-  <input type="button" id="showcollege" value="Search" onclick="collegelist()"/><br><br><br>
+  <form  id="uni">
+  <input type="search" id="schoolName" placeholder="Name or Location" />
+  <input type="submit" id="showcollege" value="submit"/><br><br><br>
+  </form>
   
 
- <div id="cards" class="ui container">
-  <div class="ui cards">
+ <div id="cards" class="ui container centered">
+  <div class="ui centered cards">
     <div class="card">
       <div class="content">
-        <div class="header">
+        <div id="nameCollege" class="header">
           Name of College
         </div>
-        <div class="location">
+        <div id="collegeLocation" class="location">
           Location of College
         </div>
-        <div class="collegewebsite">
+        <div id="collegewebsite" class="collegewebsite">
           College website
         </div>
       </div>
  </div>
+
 
 
 

@@ -26,7 +26,14 @@ body {
 #comments {
     text-align: center;
     width:40em;
-    
+}
+/* css for universities page*/
+#cards {
+    color: black;
+    text-align: center;
+}
+#search{
+    text-align: center;
 }
 
 
