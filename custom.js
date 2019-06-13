@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 })
 window.onload = function() {
-/*create variable school to query search text box in universities.html */    
+/*create variable school to query element named #schoolname in universities.html */    
 var school = document.querySelector('#schoolName')
 
 let form=document.querySelector("#uni")
@@ -19,13 +19,14 @@ let collegeState = document.querySelector('#collegeState')
 let pricecal= document.querySelector('#pricecalculator')
 let val
 let schoolInfo
+  /*Add eventlistener to handle and run function when submit is clicked*/
 form.addEventListener("submit", function (event){ 
     event.preventDefault()  
     /* API key used inorder to authenticate requests in project*/
     var key = "6cIJQHwVG2gQoWzAAn2DMbNsTde4DlCR8VENo6Zl";
     val = school.value;
     console.log(val)
-    //using Fetch to grab data from API
+    //use Fetch to grab data from API
     fetch("https://api.data.gov/ed/collegescorecard/v1/schools?school.name=" + val + "&api_key=" + key)
     .then(function(resp) { return resp.json() })
     .then(function(data) {
